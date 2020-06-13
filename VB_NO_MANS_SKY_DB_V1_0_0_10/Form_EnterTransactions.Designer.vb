@@ -464,7 +464,7 @@ Partial Class frmTransactions
         Me.txtPlanetID.BackColor = System.Drawing.Color.MediumBlue
         Me.txtPlanetID.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPlanetID.ForeColor = System.Drawing.Color.Aqua
-        Me.txtPlanetID.Location = New System.Drawing.Point(590, 33)
+        Me.txtPlanetID.Location = New System.Drawing.Point(590, 53)
         Me.txtPlanetID.Name = "txtPlanetID"
         Me.txtPlanetID.Size = New System.Drawing.Size(45, 23)
         Me.txtPlanetID.TabIndex = 172
@@ -476,7 +476,7 @@ Partial Class frmTransactions
         Me.txtSystemID.BackColor = System.Drawing.Color.MediumBlue
         Me.txtSystemID.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSystemID.ForeColor = System.Drawing.Color.Aqua
-        Me.txtSystemID.Location = New System.Drawing.Point(305, 33)
+        Me.txtSystemID.Location = New System.Drawing.Point(305, 53)
         Me.txtSystemID.Name = "txtSystemID"
         Me.txtSystemID.Size = New System.Drawing.Size(45, 23)
         Me.txtSystemID.TabIndex = 171
@@ -488,7 +488,7 @@ Partial Class frmTransactions
         Me.txtAccountID.BackColor = System.Drawing.Color.MediumBlue
         Me.txtAccountID.Font = New System.Drawing.Font("Cambria", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAccountID.ForeColor = System.Drawing.Color.Aqua
-        Me.txtAccountID.Location = New System.Drawing.Point(28, 33)
+        Me.txtAccountID.Location = New System.Drawing.Point(28, 53)
         Me.txtAccountID.Name = "txtAccountID"
         Me.txtAccountID.Size = New System.Drawing.Size(45, 23)
         Me.txtAccountID.TabIndex = 170
@@ -1285,14 +1285,14 @@ Partial Class frmTransactions
         'Label6
         '
         Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Turquoise
         Me.Label6.Location = New System.Drawing.Point(579, 11)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(63, 19)
+        Me.Label6.Size = New System.Drawing.Size(63, 39)
         Me.Label6.TabIndex = 147
-        Me.Label6.Text = "Planets:"
+        Me.Label6.Text = "Planet ID:"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lstSystems
         '
@@ -1309,14 +1309,14 @@ Partial Class frmTransactions
         'Label5
         '
         Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Turquoise
         Me.Label5.Location = New System.Drawing.Point(290, 11)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 19)
+        Me.Label5.Size = New System.Drawing.Size(69, 39)
         Me.Label5.TabIndex = 145
-        Me.Label5.Text = "Systems:"
+        Me.Label5.Text = "System ID:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lstAccounts
         '
@@ -1403,14 +1403,14 @@ Partial Class frmTransactions
         'lblAccountID
         '
         Me.lblAccountID.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.lblAccountID.AutoSize = True
         Me.lblAccountID.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAccountID.ForeColor = System.Drawing.Color.Turquoise
         Me.lblAccountID.Location = New System.Drawing.Point(12, 11)
         Me.lblAccountID.Name = "lblAccountID"
-        Me.lblAccountID.Size = New System.Drawing.Size(76, 19)
+        Me.lblAccountID.Size = New System.Drawing.Size(76, 39)
         Me.lblAccountID.TabIndex = 6
-        Me.lblAccountID.Text = "Accounts:"
+        Me.lblAccountID.Text = "Account ID:"
+        Me.lblAccountID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel1
         '

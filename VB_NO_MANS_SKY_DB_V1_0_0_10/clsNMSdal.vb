@@ -1445,7 +1445,7 @@ Public Class clsNMSdal
             Criteria = "UserID=" & CInt(frmMain.myUserID) & " AND AccountID=" & intAccountID
         End If
 
-        strSQL = "SELECT AccountID,UserID,TotalNanites,TotalUnits,TotalQuicksilver,TotalFrigateModules,LastSaved FROM tblUnits "
+        strSQL = "SELECT AccountID,UserID,TotalNanites,TotalUnits,TotalQuicksilver,TotalFrigateModules,TotalSalvagedData,LastSaved FROM tblUnits "
         strSQL += " WHERE " & Criteria
         dt = GetDataTable(ConnString, strSQL)
         If dt IsNot Nothing Then
