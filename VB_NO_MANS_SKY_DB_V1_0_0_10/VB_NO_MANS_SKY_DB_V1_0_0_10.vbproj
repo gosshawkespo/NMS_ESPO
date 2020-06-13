@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6382CE4D-6D90-4417-B91B-31F3E9D553A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VB_NO_MANS_SKY_DB_V1_0.My.MyApplication</StartupObject>
+    <RootNamespace>VB_NO_MANS_SKY_DB_V1_0</RootNamespace>
+    <AssemblyName>VB_NO_MANS_SKY_DB_V1_0</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VB_NO_MANS_SKY_DB_V1_0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VB_NO_MANS_SKY_DB_V1_0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>.\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>.\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin">
+      <HintPath>.\MySql.Fabric.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>.\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculator.Designer.vb">
+      <DependentUpon>Calculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clsDGComponentManager.vb" />
+    <Compile Include="clsDG_NMS_Controls.vb" />
+    <Compile Include="clsErrorLog.vb" />
+    <Compile Include="clsLogFields.vb" />
+    <Compile Include="clsNMSdal.vb" />
+    <Compile Include="DanG_ComponentManager.vb" />
+    <Compile Include="DanG_DB_Tools.vb" />
+    <Compile Include="Form_ACCOUNT_ENTRY.Designer.vb">
+      <DependentUpon>Form_ACCOUNT_ENTRY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ACCOUNT_ENTRY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BaseEntry.Designer.vb">
+      <DependentUpon>Form_BaseEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BaseEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Build_A_Base.Designer.vb">
+      <DependentUpon>Form_Build_A_Base.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Build_A_Base.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dlgResourceExists.Designer.vb">
+      <DependentUpon>Form_dlgResourceExists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_dlgResourceExists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EnterFauna.Designer.vb">
+      <DependentUpon>Form_EnterFauna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EnterFauna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EnterTransactions.Designer.vb">
+      <DependentUpon>Form_EnterTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EnterTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LogEntry3.Designer.vb">
+      <DependentUpon>Form_LogEntry3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LogEntry3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LOG_VIEW.Designer.vb">
+      <DependentUpon>Form_LOG_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LOG_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MAINForm.Designer.vb">
+      <DependentUpon>Form_MAINForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MAINForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Mysql_Login.Designer.vb">
+      <DependentUpon>Form_Mysql_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Mysql_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PlanetEntry.Designer.vb">
+      <DependentUpon>Form_PlanetEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PlanetEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ResourceEntry.Designer.vb">
+      <DependentUpon>Form_ResourceEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ResourceEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_StorageEntry.Designer.vb">
+      <DependentUpon>Form_StorageEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_StorageEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_StructureEntry.Designer.vb">
+      <DependentUpon>Form_StructureEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_StructureEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SystemEntry.Designer.vb">
+      <DependentUpon>Form_SystemEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SystemEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_WaypointEntry.Designer.vb">
+      <DependentUpon>Form_WaypointEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_WaypointEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WPFExample.xaml.vb">
+      <DependentUpon>WPFExample.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calculator.resx">
+      <DependentUpon>Calculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ACCOUNT_ENTRY.resx">
+      <DependentUpon>Form_ACCOUNT_ENTRY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BaseEntry.resx">
+      <DependentUpon>Form_BaseEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Build_A_Base.resx">
+      <DependentUpon>Form_Build_A_Base.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_dlgResourceExists.resx">
+      <DependentUpon>Form_dlgResourceExists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EnterFauna.resx">
+      <DependentUpon>Form_EnterFauna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EnterTransactions.resx">
+      <DependentUpon>Form_EnterTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LogEntry3.resx">
+      <DependentUpon>Form_LogEntry3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LOG_VIEW.resx">
+      <DependentUpon>Form_LOG_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MAINForm.resx">
+      <DependentUpon>Form_MAINForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Mysql_Login.resx">
+      <DependentUpon>Form_Mysql_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PlanetEntry.resx">
+      <DependentUpon>Form_PlanetEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ResourceEntry.resx">
+      <DependentUpon>Form_ResourceEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_StorageEntry.resx">
+      <DependentUpon>Form_StorageEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_StructureEntry.resx">
+      <DependentUpon>Form_StructureEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SystemEntry.resx">
+      <DependentUpon>Form_SystemEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_WaypointEntry.resx">
+      <DependentUpon>Form_WaypointEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Scripting">
+      <Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="WPFExample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
